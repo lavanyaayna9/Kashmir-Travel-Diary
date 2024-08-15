@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///C:/Users/LAVANYA/Desktop/travel.html#contact-information -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASHMIR TRAVEL DIARY</title>
+    <link href="./KASHMIR TRAVEL DIARY_files/css2" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fae6f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0c0f50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'times', serif;
+            font-size: 2.5em;
+        }
+        header h1::after {
+            content: "by Lavanya Pakhale (RA2211028010132)";
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            font-size: 0.6em;
+            color: #eeebec;
+        }
+        nav {
+            background-color: #0c0f50;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f0a500;
+        }
+        main {
+            padding: 20px;
+            max-width: 1500px;
+            margin: auto;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #7d0f0f;
+            padding-bottom: 5px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #7d0f0f;
+        }
+        a {
+            color: #7d0f0f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #d41d1d;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        figure {
+            margin: 0;
+            flex: 1 1 calc(33% - 10px);
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        figure:hover figcaption {
+            transform: translateY(0);
+        }
+        footer {
+            background-color: #0c0f50;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        footer canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.1;
+        }
+        footer .footer-content {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        footer .footer-content div {
+            flex: 1 1 300px;
+            margin: 10px;
+        }
+        footer h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #f0a500;
+            position: relative;
+        }
+        footer h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #f0a500;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        footer .social-links a {
+            color: #f0a500;
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+        footer .social-links a:hover {
+            transform: scale(1.3) rotate(10deg);
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        footer h3 {
+            animation: pulse 3s infinite;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        #comment-box {
+            margin-top: 20px;
+        }
+        #comment-box textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #comment-box button {
+            background-color: #7d0f0f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #comment-box button:hover {
+            background-color: #d41d1d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KASHMIR TRAVEL DIARY</h1>
+    </header>
+
+    <nav>
+        <a href="file:///C:/Users/LAVANYA/Desktop/travel.html#top-attractions">Top Attractions</a>
+        <a href="file:///C:/Users/LAVANYA/Desktop/travel.html#photo-gallery">Photo Gallery</a>
+        <a href="file:///C:/Users/LAVANYA/Desktop/travel.html#travel-experiences">Travel Experiences</a>
+        <a href="file:///C:/Users/LAVANYA/Desktop/travel.html#cost-breakdown">Cost Breakdown</a>
+        <a href="file:///C:/Users/LAVANYA/Desktop/travel.html#contact-information">Contact</a>
+    </nav>
+
+    <main>
+        <div id="top-attractions" class="section">
+            <h2 class="section-title">TOP ATTRACTIONS IN KASHMIR</h2>
+            <ul>
+                <li>Dal Lake</li>
+                <li>Shalimar Bagh</li>
+                <li>Sonmarg</li>
+                <li>Gulmarg</li>
+                <li>Pahalgam</li>
+            </ul>
+        </div>
+
+        <div id="photo-gallery" class="section">
+            <h2 class="section-title">PHOTO GALLERY</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="./KASHMIR TRAVEL DIARY_files/lake-dal-shikava-boat.jpg.webp" alt="Houseboat interiors">
+                    <figcaption>Houseboat interiors</figcaption>
+                </figure>
+                <figure>
+                    <img src="./KASHMIR TRAVEL DIARY_files/houseboat-2031055_960_720.jpg" alt="Houseboat interiors">
+                    <figcaption>Houseboat interiors</figcaption>
+                </figure>
+                <figure>
+                    <img src="./KASHMIR TRAVEL DIARY_files/99403459.cms" alt="Gondola Ride at Sonmarg">
+                    <figcaption>Gondola Ride at Sonmarg</figcaption>
+                </figure>
+                <figure>
+                    <img src="./KASHMIR TRAVEL DIARY_files/aru-city.jpg" alt="Aru Valley">
+                    <figcaption>Aru Valley</figcaption>
+                </figure>
+                <figure>
+                    <img src="./KASHMIR TRAVEL DIARY_files/1696404438795" alt="Betaab Valley">
+                    <figcaption>Betaab Valley</figcaption>
+                </figure>
+                <figure>
+                    <img src="./KASHMIR TRAVEL DIARY_files/KGLT-Blog-7-e1638273319490.jpg" alt="Kashmir Lake">
+                    <figcaption>Kashmir Lake</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div id="travel-experiences" class="section">
+            <h2 class="section-title">TRAVEL EXPERIENCES</h2>
+            <p>Our journey to Kashmir began with a warm welcome aboard a beautifully adorned houseboat on Dal Lake in Srinagar. The serene waters, framed by the majestic Himalayas, provided a tranquil and picturesque setting. As evening fell, we enjoyed a peaceful Shikara ride, gliding past floating gardens and vibrant markets, all while witnessing a breathtaking sunset that painted the sky in warm hues.</p>
+            <p>The next day, we ventured to Sonmarg, the "Meadow of Gold," known for its stunning landscapes. The drive itself was an adventure, offering views of lush valleys and snow-capped peaks. In Sonmarg, we took a thrilling gondola ride to higher altitudes, where the sight of pristine glaciers and the cool mountain breeze left us in awe.</p>
+            <p>Gulmarg, our next destination, is a haven for adventure enthusiasts. The gondola ride to the Apharwat peak was an unforgettable experience, offering panoramic views of the surrounding mountains and valleys. We spent the day exploring the snow-covered landscapes, making snowmen, and engaging in friendly snowball fights.</p>
+            <p>Our final destination was Pahalgam, where we immersed ourselves in the tranquility of Aru and Betaab valleys. These picturesque valleys, with their lush green meadows and crystal-clear streams, provided the perfect setting for leisurely strolls and picnics. The local markets in Pahalgam were a delight to explore, offering unique handicrafts and traditional Kashmiri attire.</p>
+        </div>
+
+        <div id="cost-breakdown" class="section">
+            <h2 class="section-title">COST BREAKDOWN</h2>
+            <table style="width:100%; border-collapse: collapse;">
+                <tbody><tr style="background-color: #7d0f0f; color: white;">
+                    <th style="padding: 10px; border: 1px solid #ddd;">Item</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;">Cost</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Flight Tickets</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">₹60,000</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Accommodation</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">₹30,000</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Transportation</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">₹35,000</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Food &amp; Miscellaneous</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">₹25,000</td>
+                </tr>
+                <tr style="background-color: #f2f2f2;">
+                    <td style="padding: 10px; border: 1px solid #ddd;"><strong>Total</strong></td>
+                    <td style="padding: 10px; border: 1px solid #ddd;"><strong>₹1,50,000</strong></td>
+                </tr>
+            </tbody></table>
+        </div>
+
+        <div id="comment-box" class="section">
+            <h2 class="section-title">LEAVE A COMMENT</h2>
+            <textarea placeholder="Share your thoughts about the travel diary..."></textarea>
+            <button>Submit Comment</button>
+        </div>
+    </main>
+
+    <footer id="contact-information">
+        <canvas id="footerCanvas"></canvas>
+        <div class="footer-content">
+            <div>
+                <h3>Contact Information</h3>
+                <p><span class="highlight">Phone:</span> +919407260819</p>
+                <p><span class="highlight">Email:</span> lavanyaayna9@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Canvas animation script
+        const canvas = document.getElementById('footerCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = document.querySelector('footer').offsetHeight;
+
+        const particlesArray = [];
+
+        class Particle {
+            constructor(x, y, size, speedX, speedY) {
+                this.x = x;
+                this.y = y;
+                this.size = size;
+                this.speedX = speedX;
+                this.speedY = speedY;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.size > 0.2) this.size -= 0.1;
+            }
+
+            draw() {
+                ctx.fillStyle = 'white';
+                ctx.strokeStyle = 'gold';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.closePath();
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+
+        function init() {
+            particlesArray.push(new Particle(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 5 + 1</script></body></html>
